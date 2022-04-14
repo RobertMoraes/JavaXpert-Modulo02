@@ -33,6 +33,30 @@ public class ExecutarContaBancaria {
 		cb2.deposito(500.00);
 		cb2.deposito(300.00);
 		
+		
+		ContaBancaria cb3 = new ContaBancaria("Bruna Leite",1,100111, 3000, 500);
+		
+		System.out.println(cb3.detalhes());
+		
+		
+		int movimentacao = 0;
+		switch (movimentacao) {
+		case 1: //cadastro nova conta
+			
+			break;
+			
+		case 2: // saque conta
+			
+			break;
+			
+		case 3: //deposito conta
+			
+			break;
+
+		default:
+			break;
+		}
+		
 	}
 
 }

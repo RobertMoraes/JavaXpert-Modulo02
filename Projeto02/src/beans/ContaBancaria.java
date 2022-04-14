@@ -112,4 +112,15 @@ public class ContaBancaria {
 		System.out.println("Conta: "+ this.numeroConta +"\n"+"Saldo: "+ this.saldoConta+"\nLimite Especial: "+this.limiteEspecial);
 	}
 	
+	public String detalhes() {
+		String conta;
+		if(tipoConta == 1 ) {
+			conta = "Conta Corrente";
+		}else {
+			conta = "Conta Poupança";
+		}
+		return "Cliente: "+cliente+"\nTipo Conta: "+conta
+				+"\nNumero Conta: "+numeroConta+"\nSaldo Inicial: "+saldoConta+"\nLimite Especial: "+limiteEspecial;
+	}
+	
 }
