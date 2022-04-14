@@ -43,5 +43,11 @@ public class Motor {
 	public void desligar() {
 		System.out.println("Desligando...!!!!");
 	}
+
+	@Override
+	public String toString() {
+		return "Motor [potencia=" + potencia + ", cilindros=" + cilindros + ", combustivel=" + combustivel + "]";
+	}
+	
 	
 }
