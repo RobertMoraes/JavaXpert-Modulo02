@@ -1,0 +1,39 @@
+package implementacao;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Scanner;
+
+import beans.AgendaRevisao;
+
+public class ExecutarAgendaRevisao {
+
+	public static void main(String[] args) throws ParseException {
+		
+		SimpleDateFormat formataData = new SimpleDateFormat("dd/MM/yyyy");
+		
+		SimpleDateFormat formataHora = new SimpleDateFormat("HH:mm");
+		
+		AgendaRevisao agendaRevisao = new AgendaRevisao();
+		Scanner leitor = new Scanner(System.in);
+		
+		System.out.println("Informe cliente: ");
+		agendaRevisao.cliente = leitor.nextLine();
+		
+		System.out.println("Informe modelo: ");
+		agendaRevisao.modelo = leitor.nextLine();
+		
+		System.out.println("Informe quilometragem: ");
+		agendaRevisao.kmVeiculo = leitor.nextLong();
+		
+		System.out.println("Informe Data: (dd/MM/yyyy) ");
+		String dt = leitor.nextLine();
+		agendaRevisao.data = formataData.parse(dt);
+		
+		System.out.println("Informe Hora: (HH:mm) ");
+		String hr = leitor.nextLine();
+		agendaRevisao.hora = formataHora.parse(hr);
+		
+	}
+
+}

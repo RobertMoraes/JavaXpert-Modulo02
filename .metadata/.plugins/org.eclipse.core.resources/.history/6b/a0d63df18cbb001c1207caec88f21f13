@@ -1,0 +1,97 @@
+package beans;
+
+public class ContaBancaria {
+	String cliente;
+	int tipoConta;
+	int numeroConta;
+	double saldoConta;
+	double limiteEspecial;
+	
+	public ContaBancaria() {}
+	
+	public ContaBancaria(String cliente, int tipoConta, int numeroConta) {
+		super();
+		this.cliente = cliente;
+		this.tipoConta = tipoConta;
+		this.numeroConta = numeroConta;
+	}
+	
+	public ContaBancaria(String cliente, int tipoConta, int numeroConta, double saldoConta, double limiteEspecial) {
+		super();
+		this.cliente = cliente;
+		this.tipoConta = tipoConta;
+		this.numeroConta = numeroConta;
+		this.saldoConta = saldoConta;
+		this.limiteEspecial = limiteEspecial;
+	}
+	
+	public String getCliente() {
+		return cliente;
+	}
+	public void setCliente(String cliente) {
+		this.cliente = cliente;
+	}
+	public int getTipoConta() {
+		return tipoConta;
+	}
+	public void setTipoConta(int tipoConta) {
+		this.tipoConta = tipoConta;
+	}
+	public int getNumeroConta() {
+		return numeroConta;
+	}
+	public void setNumeroConta(int numeroConta) {
+		this.numeroConta = numeroConta;
+	}
+	public double getSaldoConta() {
+		return saldoConta;
+	}
+	public void setSaldoConta(double saldoConta) {
+		this.saldoConta = saldoConta;
+	}
+	public double getLimiteEspecial() {
+		return limiteEspecial;
+	}
+	public void setLimiteEspecial(double limiteEspecial) {
+		this.limiteEspecial = limiteEspecial;
+	}
+	
+	public void deposito(double valor) {
+		System.out.println("Processo de deposito: ");
+		this.saldoConta = this.saldoConta + valor;
+		extrato();
+	}
+	
+	public void definirLimite(double limiteEspecial) {
+		this.limiteEspecial = limiteEspecial;
+	}
+	public void saque( double valor) {
+		System.out.println("Processo de saque: ");
+		if(this.tipoConta == 1) {
+			System.out.println("Saque conta corrente: ");
+			if(this.saldoConta>= valor) {
+				this.saldoConta = this.saldoConta - valor;
+				System.out.println("Saque autorizado.");
+			}else if(this.limiteEspecial>= valor) {
+				System.out.println("Saque limite Especial: ");
+				this.limiteEspecial=this.limiteEspecial - valor;
+				this.saldoConta = this.saldoConta-this.limiteEspecial;
+				System.out.println("Saque autorizado.");
+			}
+				System.out.println("Saldo insuficiente");
+				extrato();
+		}else if(this.tipoConta == 2) {
+			System.out.println("Saque conta poupança: ");
+			if(this.saldoConta >= valor) {
+				this.saldoConta = this.saldoConta - valor;
+			}
+		}
+		System.out.println("Saldo insuficiente");
+		extrato();
+	}
+	
+	public void extrato() {
+		System.out.println("Conta: "+ this.numeroConta +"\n"+"Saldo: "+ this.saldoConta+"\nLimite Especial: "+this.limiteEspecial);
+	}
+	
+}

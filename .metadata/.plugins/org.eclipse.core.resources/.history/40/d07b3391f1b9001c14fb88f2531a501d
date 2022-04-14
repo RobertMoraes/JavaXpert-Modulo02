@@ -1,0 +1,9 @@
+package implementacao;
+
+public class ExecutarTelevisor {
+
+	public static void main(String[] args) {
+
+	}
+
+}

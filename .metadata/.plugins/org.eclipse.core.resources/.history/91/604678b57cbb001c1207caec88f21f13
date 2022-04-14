@@ -1,0 +1,30 @@
+package impl;
+
+import beans.Produto;
+
+public class ExecutarProduto {
+
+	public static void main(String[] args) {
+
+		Produto p1 = new Produto();
+		p1.setNome("Note Dell");
+		p1.setValor(100);
+		
+		System.out.println(p1.getNome() + " - R$ " + p1.getValor());
+		
+		Produto p2 = new Produto();
+		p2.setNome("Impressora");
+		p2.setValor(200);
+		
+		System.out.println(p2.getNome() + " - R$ " + p2.getValor());
+		
+		Produto p3 = new Produto("Monitor LG", 2000);
+		
+		System.out.println(p3.getNome() + " - R$ " + p3.getValor());
+		
+		Produto p4 = new Produto("S10","Samsung",3500,true);
+			
+		System.out.println(p4.detalhes());
+	}
+
+}

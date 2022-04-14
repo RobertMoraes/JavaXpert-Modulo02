@@ -1,0 +1,13 @@
+package beans;
+
+import java.util.Date;
+
+public class AgendaRevisao {
+	
+	public String cliente;
+	public String modelo;
+	public long kmVeiculo;
+	public String data;
+	public String hora;
+
+}

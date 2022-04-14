@@ -1,0 +1,18 @@
+package beans;
+
+public class Pessoa {
+	public int id;
+	public String nome;
+	public int idade;
+	public String sentimento;
+	public String cidade;
+	
+	
+	public void comer() {
+		System.out.println("Feliz");
+	}
+	
+	public void dormir() {
+		System.out.println("Dormir");
+	}
+}

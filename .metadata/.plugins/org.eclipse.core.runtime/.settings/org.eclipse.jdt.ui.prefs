@@ -1,0 +1,10 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="beans.Livro"><rhs name\="beans.Livro"/></lhs><lhs name\="beans.AgendaRevisao"><rhs name\="beans.AgendaRevisao"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.util.Date"/><rhs name\="java.text.SimpleDateFormat"/></lhs><lhs name\="java.util.Date"><rhs name\="java.util.Date"/></lhs><lhs name\="java.text.DateFormat"><rhs name\="java.text.SimpleDateFormat"/></lhs><lhs name\="java.text.Format"><rhs name\="java.text.SimpleDateFormat"/></lhs><lhs name\="java.text.SimpleDateFormat"><rhs name\="java.text.SimpleDateFormat"/></lhs><lhs name\="beans.ContaBancaria"><rhs name\="beans.ContaBancaria"/></lhs><lhs name\="beans.Produto"><rhs name\="beans.Produto"/></lhs><lhs name\="util.Entrada"><rhs name\="util.Entrada"/></lhs></history>
+content_assist_number_of_computers=19
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.formatterprofiles.version=21
+spelling_locale_initialized=true
+typefilter_migrated=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

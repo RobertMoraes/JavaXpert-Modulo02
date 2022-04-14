@@ -1,0 +1,15 @@
+package implementacao;
+
+import beans.Televisor;
+
+public class ExecutarTelevisor {
+
+	public static void main(String[] args) {
+		System.out.println("Usando a TV...!!!");
+		
+		Televisor tv = new Televisor();
+		
+		tv.mostraStatus();
+	}
+
+}
