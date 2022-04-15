@@ -1,4 +1,4 @@
-package beans;
+package br.com.fiap.aula3.beans;
 
 public class Produto {
 	private String nome;

@@ -1,34 +1,39 @@
-package beans;
+package br.com.fiap.aula3.beans;
 
 public class ContaBancaria {
-	String cliente;
+	Banco banco;
+	Cliente cliente;
 	int tipoConta;
 	int numeroConta;
 	double saldoConta;
 	double limiteEspecial;
 	
 	public ContaBancaria() {}
-	
-	public ContaBancaria(String cliente, int tipoConta, int numeroConta) {
+		
+	public ContaBancaria(Banco banco, Cliente cliente, int tipoConta, int numeroConta) {
 		super();
+		this.banco = banco;
 		this.cliente = cliente;
 		this.tipoConta = tipoConta;
 		this.numeroConta = numeroConta;
 	}
+
 	
-	public ContaBancaria(String cliente, int tipoConta, int numeroConta, double saldoConta, double limiteEspecial) {
+	public ContaBancaria(Banco banco, Cliente cliente, int tipoConta, int numeroConta, double saldoConta,
+			double limiteEspecial) {
 		super();
+		this.banco = banco;
 		this.cliente = cliente;
 		this.tipoConta = tipoConta;
 		this.numeroConta = numeroConta;
 		this.saldoConta = saldoConta;
 		this.limiteEspecial = limiteEspecial;
 	}
-	
-	public String getCliente() {
+
+	public Cliente getCliente() {
 		return cliente;
 	}
-	public void setCliente(String cliente) {
+	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
 	}
 	public int getTipoConta() {

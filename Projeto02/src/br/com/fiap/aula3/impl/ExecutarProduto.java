@@ -1,8 +1,8 @@
-package impl;
+package br.com.fiap.aula3.impl;
 
 import javax.swing.JOptionPane;
 
-import beans.Produto;
+import br.com.fiap.aula3.beans.Produto;
 
 public class ExecutarProduto {
 

@@ -1,7 +1,7 @@
-package impl;
+package br.com.fiap.aula3.impl;
 
-import beans.Produto;
-import util.Entrada;
+import br.com.fiap.aula3.beans.Produto;
+import br.com.fiap.aula3.util.Entrada;
 
 public class ExecutarProduto3 {
 
