@@ -124,7 +124,7 @@ public class ContaBancaria {
 		}else {
 			conta = "Conta Poupança";
 		}
-		return "Cliente: "+cliente+"\nTipo Conta: "+conta
+		return banco.getRazaoSocial()+"\nCódigo Bancário: "+banco.getIdBancario()+"\n"+cliente+"\nTipo Conta: "+conta
 				+"\nNumero Conta: "+numeroConta+"\nSaldo Inicial: "+saldoConta+"\nLimite Especial: "+limiteEspecial;
 	}
 	

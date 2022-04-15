@@ -21,4 +21,8 @@ public class EntradaUtil {
 	public static void show(String msg) {
 		JOptionPane.showMessageDialog(null, msg, "Item Compra: ", 1);
 	}
+
+	public static int inteiro(String msg) {
+		return Integer.parseInt(texto(msg).toUpperCase());
+	}
 }
